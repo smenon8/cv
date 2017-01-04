@@ -13,6 +13,8 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
 
+\newif\ifresume
+\resumetrue
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
@@ -44,6 +46,7 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderPhotoCircleSize}{1.0cm}
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \newcommand{\dotSep}{\enskip\cdotp\enskip}
 
@@ -70,7 +73,7 @@
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
 
-\quote{``Must be the change that you want to see in the world."}
+% \quote{``Must be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
@@ -84,7 +87,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Jason R. Parham \dotSep Résumé \dotSep github.com/bluemellophone/cv}
+  {Jason R. Parham \dotSep Résumé}
   {\thepage}
 
 
@@ -92,7 +95,7 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/summary.tex}
+% \input{resume/summary.tex}
 \input{general/education.tex}
 % \input{resume/skills.tex}
 \input{resume/projects.tex}

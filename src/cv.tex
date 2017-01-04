@@ -13,6 +13,8 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
 
+\newif\ifresume
+\resumefalse
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
@@ -80,7 +82,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Jason R. Parham \dotSep Curriculum Vitae \dotSep github.com/bluemellophone/cv}
+  {Jason R. Parham \dotSep Curriculum Vitae}
   {\thepage}
 
 
@@ -90,9 +92,9 @@
 %-------------------------------------------------------------------------------
 \input{general/education.tex}
 \input{general/experience.tex}
+\input{cv/publications.tex}
+\input{cv/presentations.tex}
 \input{resume/projects.tex}
-% \input{cv/presentation.tex}
-\input{cv/writing.tex}
 \input{cv/committees.tex}
 \input{general/extracurricular.tex}
 
