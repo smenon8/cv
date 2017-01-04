@@ -17,7 +17,7 @@ cv:
 cover:
 	make TYPE=cover generate
 
-generate: $(SOURCE)/$(TYPE).xtex $(shell find $(SOURCE)/$(TYPE) -name '*.xtex')
+generate: $(SOURCE)/$(TYPE).tex $(shell find $(SOURCE)/$(TYPE) -name '*.tex')
 	$(TEX) -output-directory=$(SOURCE) $<
 	mv $(SOURCE)/$(TYPE).pdf build/$(TYPE).pdf
 	convert -density 300 -depth 8 -quality 85 build/$(TYPE).pdf[0] build/$(TYPE).jpg
