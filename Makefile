@@ -1,22 +1,31 @@
-.PHONY: examples
+.PHONY: src
 
 CC = xelatex
-EXAMPLES_DIR = examples
-RESUME_DIR = examples/resume
-CV_DIR = examples/cv
-RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
-CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
+SOURCE_DIR = src
+RESUME_DIR = src/resume
+CV_DIR = src/cv
+RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.xtex')
+CV_SRCS = $(shell find $(CV_DIR) -name '*.xtex')
 
-examples: $(foreach x, coverletter cv resume, $x.pdf)
+all:
+	make resume
+	make cv
+	make cover
 
-resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+resume: $(SOURCE_DIR)/resume.xtex $(RESUME_SRCS)
+	$(CC) -output-directory=$(SOURCE_DIR) $<
+	mv $(SOURCE_DIR)/resume.pdf build/
 
-cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+cv: $(SOURCE_DIR)/cv.xtex $(CV_SRCS)
+	$(CC) -output-directory=$(SOURCE_DIR) $<
+	mv $(SOURCE_DIR)/cv.pdf build/
 
-coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+cover: $(SOURCE_DIR)/cover.xtex
+	$(CC) -output-directory=$(SOURCE_DIR) $<
+	mv $(SOURCE_DIR)/cover.pdf build/
 
 clean:
-	rm -rf $(EXAMPLES_DIR)/*.pdf
+	rm -rf *.pdf
+	rm -rf $(SOURCE_DIR)/*.aux
+	rm -rf $(SOURCE_DIR)/*.log
+	rm -rf $(SOURCE_DIR)/*.out

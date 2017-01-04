@@ -1,62 +1,45 @@
-# Awesome CV [![Example](https://img.shields.io/badge/example-pdf-green.svg)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)
-
-
-[**Awesome CV**](https://github.com/posquit0/Awesome-CV) is LaTeX template for a **CV(Curriculum Vitae)**, **Résumé** or **Cover Letter** inspired by [Fancy CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv). It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
-
 
 ## Table of contents
 
-* [Preview](#preview)
-* [Quick Start](#quick-start)
-* [How to Use](#how-to-use)
+* [Preview](#Download)
+* [Usage](#usage)
 * [Credit](#credit)
-* [Contact](#contact)
 
 
-## <a name="preview"></a>Preview
+## <a name="preview"></a>Download
+
+#### CV
+
+Download CV [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cv.pdf)
+
+![CV](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cv.png)
 
 #### Résumé
 
-You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)
+Download Résumé [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/src/resume.pdf)
 
-![Résumé(Page 1)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-0.png)
-![Résumé(Page 2)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-1.png)
+![Résumé](https://raw.githubusercontent.com/bluemellophone/cv/master/src/resume.png)
 
 #### Cover Letter
 
-You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf)
+Download Cover Letter [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cover.pdf)
 
-![Cover Letter(Traditional)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-0.png)
-![Cover Letter(Awesome)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-1.png)
+![Cover Letter](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cover.png)
 
-
-## <a name="quick-start">Quick Start
-
-* [**Edit Résumé on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv/tvmzpvdjfqxp)
-* [**Edit Résumé on ShareLaTeX.com**](https://www.sharelatex.com/templates/cv-or-resume/awesome-cv)
-* [**Edit Cover Letter on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/pfzzjspkthbk)
-* [**Edit Cover Letter on ShareLaTeX.com**](https://www.sharelatex.com/templates/cover-letters/awesome-cv-cover-letter)
-
-**_Note:_ Above services do not guarantee up-to-date source code of Awesome CV**
-
-
-## <a name="how-to-use">How to Use
+## <a name="usage">Usage
 
 #### Requirements
 
 A full TeX distribution is assumed.  [Various distributions for different operating systems (Windows, Mac, \*nix) are available](http://tex.stackexchange.com/q/55437) but TeX Live is recommended.
-You can [install TeX from upstream](http://tex.stackexchange.com/q/1092) (recommended; most up-to-date) or use `sudo apt-get install texlive-full` if you really want that.  (It's generally a few years behind.)
+You can [install TeX from upstream](http://tex.stackexchange.com/q/1092) (recommended; most up-to-date) or use `sudo apt-get install texlive-full` or `sudo port install texlive-common` if you really want that.  (It's generally a few years behind.)
 
 #### Usage
 
 At a command prompt, run
 
-```bash
-$ xelatex {your-cv}.tex
 ```
-
-This should result in the creation of ``{your-cv}.pdf``
-
+$ make all
+```
 
 ## <a name="credit">Credit
 
@@ -68,11 +51,4 @@ This should result in the creation of ``{your-cv}.pdf``
 
 [**Source Sans Pro**](https://github.com/adobe-fonts/source-sans-pro) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
 
-
-## <a name="contact">Contact
-
-You are free to take my `.tex` file and modify it to create your own resume. Please don't use my resume for anything else without my permission, though!
-
-If you have any questions, feel free to join me at [`#posquit0` on Freenode](irc://irc.freenode.net/posquit0) and ask away. Click [here](https://kiwiirc.com/client/irc.freenode.net/posquit0) to connect.
-
-Good luck!
+[**Awesome CV**](https://github.com/posquit0/Awesome-CV) is LaTeX template for a **CV(Curriculum Vitae)**, **Résumé** or **Cover Letter** inspired by [Fancy CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv). It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
