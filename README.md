@@ -8,23 +8,9 @@
 
 ## <a name="download"></a>Download
 
-#### CV
-
-Download CV [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cv.pdf)
-
-![CV](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cv.jpg)
-
-#### Résumé
-
-Download Résumé [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/build/resume.pdf)
-
-![Résumé](https://raw.githubusercontent.com/bluemellophone/cv/master/build/resume.jpg)
-
-#### Cover Letter
-
-Download Cover Letter [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cover.pdf)
-
-![Cover Letter](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cover.jpg)
+| [![CV](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cv.jpg)](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cv.pdf)  | [![Résumé](https://raw.githubusercontent.com/bluemellophone/cv/master/build/resume.jpg)](https://raw.githubusercontent.com/bluemellophone/cv/master/build/resume.pdf)
+|:---:|:---:|
+| CV | Résumé |
 
 ## <a name="usage">Usage
 
