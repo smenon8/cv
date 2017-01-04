@@ -1,31 +1,28 @@
 .PHONY: src
 
-CC = xelatex
-SOURCE_DIR = src
-RESUME_DIR = src/resume
-CV_DIR = src/cv
-RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.xtex')
-CV_SRCS = $(shell find $(CV_DIR) -name '*.xtex')
+TEX = xelatex
+SOURCE = src
 
-all:
-	make resume
-	make cv
-	make cover
+define generate
+endef
 
-resume: $(SOURCE_DIR)/resume.xtex $(RESUME_SRCS)
-	$(CC) -output-directory=$(SOURCE_DIR) $<
-	mv $(SOURCE_DIR)/resume.pdf build/
+all: resume cv cover
 
-cv: $(SOURCE_DIR)/cv.xtex $(CV_SRCS)
-	$(CC) -output-directory=$(SOURCE_DIR) $<
-	mv $(SOURCE_DIR)/cv.pdf build/
+resume:
+	make TYPE=resume generate
 
-cover: $(SOURCE_DIR)/cover.xtex
-	$(CC) -output-directory=$(SOURCE_DIR) $<
-	mv $(SOURCE_DIR)/cover.pdf build/
+cv:
+	make TYPE=cv generate
+
+cover:
+	make TYPE=cover generate
+
+generate: $(SOURCE)/$(TYPE).xtex $(shell find $(SOURCE)/$(TYPE) -name '*.xtex')
+	$(TEX) -output-directory=$(SOURCE) $<
+	mv $(SOURCE)/$(TYPE).pdf build/$(TYPE).pdf
+	convert -density 300 -depth 8 -quality 85 build/$(TYPE).pdf[0] build/$(TYPE).jpg
 
 clean:
-	rm -rf *.pdf
-	rm -rf $(SOURCE_DIR)/*.aux
-	rm -rf $(SOURCE_DIR)/*.log
-	rm -rf $(SOURCE_DIR)/*.out
+	rm -rf $(SOURCE)/*.aux
+	rm -rf $(SOURCE)/*.log
+	rm -rf $(SOURCE)/*.out

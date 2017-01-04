@@ -1,30 +1,30 @@
 
 ## Table of contents
 
-* [Preview](#Download)
+* [Download](#download)
 * [Usage](#usage)
 * [Credit](#credit)
 
 
-## <a name="preview"></a>Download
+## <a name="download"></a>Download
 
 #### CV
 
-Download CV [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cv.pdf)
+Download CV [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cv.pdf)
 
-![CV](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cv.png)
+![CV](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cv.jpg)
 
 #### Résumé
 
-Download Résumé [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/src/resume.pdf)
+Download Résumé [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/build/resume.pdf)
 
-![Résumé](https://raw.githubusercontent.com/bluemellophone/cv/master/src/resume.png)
+![Résumé](https://raw.githubusercontent.com/bluemellophone/cv/master/build/resume.jpg)
 
 #### Cover Letter
 
-Download Cover Letter [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cover.pdf)
+Download Cover Letter [PDF](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cover.pdf)
 
-![Cover Letter](https://raw.githubusercontent.com/bluemellophone/cv/master/src/cover.png)
+![Cover Letter](https://raw.githubusercontent.com/bluemellophone/cv/master/build/cover.jpg)
 
 ## <a name="usage">Usage
 
