@@ -1,6 +1,6 @@
 # Awesome CV [![Example](https://img.shields.io/badge/example-pdf-green.svg)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)
 
-* Please note: The resume has been created using www.sharelatex.com * 
+_Please note: The resume has been created using www.sharelatex.com_
 
 ## <a name="download"></a>Download
 
